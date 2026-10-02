@@ -12,7 +12,7 @@ module.exports = {
       'progress',
       'summary',
       'html:reports/cucumber-report.html',
-      'json:reports/cucumber-report.json',
+      'json:reports/json/cucumber-report.json',
     ],
     formatOptions: { snippetInterface: 'async-await' },
     /* Retry on CI only */
