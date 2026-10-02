@@ -14,17 +14,19 @@
   "author": "nik",
   "type": "commonjs",
   "scripts": {
-    "test": "cucumber-js",
-    "test:head": "cucumber-js --world-parameters \"{\\\"headed\\\":true}\"",
-    "test:manufacturers": "cucumber-js --tags @manufacturer",
-    "test:partners": "cucumber-js --tags @partner",
+    "test": "node run-tests.mjs",
+    "test:head": "node run-tests.mjs --world-parameters \"{\\\"headed\\\":true}\"",
+    "test:manufacturers": "node run-tests.mjs --tags @manufacturer",
+    "test:partners": "node run-tests.mjs --tags @partner",
     "typecheck": "tsc --noEmit",
-    "codegen": "playwright codegen https://source.thenbs.com/en/gb"
+    "codegen": "playwright codegen https://source.thenbs.com/en/gb",
+    "report": "node report.mjs"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^13.2.1",
     "@playwright/test": "^1.63.0",
     "@types/node": "^26.6.4",
+    "multiple-cucumber-html-reporter": "^4.3.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }

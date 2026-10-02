@@ -33,3 +33,5 @@ npm run test:partners        # only @partner scenarios
 ```
 
 The HTML report is written to `reports/cucumber-report.html`. It shows each Expected/Actual comparison under its step, and a screenshot for any failed scenario.
+
+Every test run also builds a dashboard with charts and per-feature summaries at `reports/dashboard/index.html` ([multiple-cucumber-html-reporter](https://github.com/WasiqB/multiple-cucumber-html-reporter)). It is built from `reports/json/cucumber-report.json` even when scenarios fail. To rebuild it without rerunning the tests, use `npm run report`.
