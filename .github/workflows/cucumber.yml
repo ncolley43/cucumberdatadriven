@@ -1,0 +1,46 @@
+name: Cucumber Tests
+
+on:
+  # Runs on every push, to any branch
+  push:
+  pull_request:
+    branches: [ main, master ]
+  # Allows the pipeline to be run manually from the GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      # Build: install exact dependency versions from package-lock.json
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Run Cucumber tests
+        run: npm test
+
+      # Runs even if tests fail, so the report is always available
+      - name: Upload Cucumber report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cucumber-report
+          path: reports/
+          retention-days: 1

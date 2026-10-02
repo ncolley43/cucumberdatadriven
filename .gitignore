@@ -1,0 +1,10 @@
+
+# Node
+node_modules/
+
+# Cucumber reports
+/reports/
+
+# Playwright
+/playwright/.cache/
+/playwright/.auth/

@@ -1,0 +1,31 @@
+{
+  "name": "cucumberdatadriven",
+  "version": "1.0.0",
+  "description": "Data-driven Cucumber + Playwright tests for NBS Source manufacturer and partner overview pages",
+  "homepage": "https://github.com/ncolley43/cucumberdatadriven#readme",
+  "bugs": {
+    "url": "https://github.com/ncolley43/cucumberdatadriven/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncolley43/cucumberdatadriven.git"
+  },
+  "license": "ISC",
+  "author": "nik",
+  "type": "commonjs",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:head": "cucumber-js --world-parameters \"{\\\"headed\\\":true}\"",
+    "test:manufacturers": "cucumber-js --tags @manufacturer",
+    "test:partners": "cucumber-js --tags @partner",
+    "typecheck": "tsc --noEmit",
+    "codegen": "playwright codegen https://source.thenbs.com/en/gb"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "British Board of Agrément (BBA)",
+    "path": "/en/gb/manufacturer/british-board-of-agrement-bba/pocBEKcGaYPyk99HhXpUYB/overview",
+    "tagline": "Making the construction industry fit-for-purpose and future-ready",
+    "phone": "+44 (0)1923 665300",
+    "website": "https://www.bbacerts.co.uk",
+    "contactButton": "Contact certification body",
+    "socialLinks": [
+      { "platform": "LinkedIn", "url": "https://www.linkedin.com/company/british-board-of-agrement/" },
+      { "platform": "Twitter", "url": "https://twitter.com/BBACerts" },
+      { "platform": "Facebook", "url": "https://www.facebook.com/BBACerts" },
+      { "platform": "Youtube", "url": "https://www.youtube.com/channel/UCCbNV0U6W-Uwsmub0F8oTRg" },
+      { "platform": "Instagram", "url": "https://www.instagram.com/bbacerts/" }
+    ]
+  },
+  {
+    "name": "Code for Construction Product Information (CCPi)",
+    "path": "/en/gb/manufacturer/code-for-construction-product-information-ccpi/i5j8jhEF1GSB62Gjd8spQM/overview",
+    "tagline": "Raising standards in construction product information",
+    "website": "https://www.cpicode.org.uk/",
+    "contactButton": "Contact certification body",
+    "socialLinks": [
+      { "platform": "LinkedIn", "url": "https://www.linkedin.com/company/construction-product-information/" }
+    ]
+  },
+  {
+    "name": "Energy Technology List (ETL)",
+    "path": "/en/gb/manufacturer/energy-technology-list-etl/TkDqEvCumihr1aC7JycVZ/overview",
+    "tagline": "UK Government backed, Energy Efficient Technology you can trust!",
+    "website": "https://etl.energysecurity.gov.uk/",
+    "contactButton": "Contact certification body",
+    "socialLinks": [
+      { "platform": "LinkedIn", "url": "https://www.linkedin.com/company/energy-technology-list-etl/" },
+      { "platform": "Youtube", "url": "https://www.youtube.com/@EnergyTechnologyList" }
+    ]
+  }
+]
